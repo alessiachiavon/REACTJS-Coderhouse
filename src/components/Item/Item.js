@@ -5,7 +5,7 @@ const Item = ({id, tipo, imagen, color, descripcion, precio}) => {
     return (
         <article style={{padding:10, width:300, margin:25}}>
             <picture>
-                <img src={imagen}/>
+                <img src={imagen} style={{width:300, marginBottom:20}}/>
             </picture>
             <header>
                 <h2 style={{fontSize:25}}>

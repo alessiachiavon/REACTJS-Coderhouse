@@ -12,10 +12,10 @@ const ItemDetail = ({tipo, imagen, color, descripcion, precio, stock}) => {
     return (
         <article style={{padding:10, width:300, margin:25}}>
             <picture>
-                <img src={imagen}/>
+                <img src={imagen} style={{width:300, marginBottom:20}}/>
             </picture>
             <header>
-                <h2>
+                <h2 style={{fontSize:25}}>
                     {tipo}
                 </h2>
             </header>
@@ -26,14 +26,14 @@ const ItemDetail = ({tipo, imagen, color, descripcion, precio, stock}) => {
                 <p>
                     {descripcion}
                 </p>
-                <p>
+                <p style={{color:'grey', fontSize:20}}>
                     ${precio}
                 </p>
             </section>
             {
                 quantity == 0
                     ? ( stock > 0 ? <ItemCount stock={stock} onAdd={handleOnAdd}/> : <p>No hay stock del producto</p>)
-                    : <button>Finalizar compra</button>
+                    : <button style={{padding:10, border:'none', color:'white', backgroundColor: 'grey', margin:25, borderRadius:10}}>Finalizar compra</button>
             }
         </article>
     )
