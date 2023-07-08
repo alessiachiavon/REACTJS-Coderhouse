@@ -11,7 +11,7 @@ Está proyectado generar un login, poder modificar la cantidad de elementos de u
 
 Clonar el proyecto y entrar en el directorio:
 
-git clone https://github.com/alessiachiavon/ReactJS
+git clone https://github.com/alessiachiavon/REACTJS-Coderhouse
 cd ecommerce2
 
 Instalar la versión de npm recomendada (instalar nvm si hace falta):
