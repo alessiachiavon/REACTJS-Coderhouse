@@ -44,10 +44,10 @@ El objetivo es crear una tienda virtual accesible, fácil de utilizar por el usu
 
 Dado que la marca se representa minimalista y con colores neutros, se decidió trabajar los estilos dentro de ReactJs, sin adoptar CSS. Es probable, que a futuro, con el crecimiento de la marca y la tienda, esto deba modificarse, intergrándose CSS al proyecto.
 
-Como iniciar el servidor, nos encontramos con un imagen de portada, y todos los productos expuestos. Desde ese lugar, el usuario puede acceder directamente a los detalles de cada item o bien, desde el navegador, filtrar los productos por sus categorías. 
+Al iniciar el servidor, nos encontramos con un imagen de portada, y todos los productos expuestos. Desde ese lugar, el usuario puede acceder directamente a los detalles de cada item o bien, desde el navegador, filtrar los productos por sus categorías. 
 Una vez seleccionado el producto, puede elegirse la cantidad deseada (siempre y cuando no supere el stock) y agregarlo al carrito. Este último permanece visible desde toda la tienda, para poder acceder a él con facilidad.
 
-Como base de datos se utilizó Firebase. Allí se guardan todos los productos, con sus especificaciones y su stock. También se almacenan allí los datos de los clientes cuando general su orden de compra. 
+Como base de datos se utilizó Firebase. Allí se guardan todos los productos, con sus especificaciones y su stock. También se almacenan allí los datos de los clientes cuando generar su orden de compra. 
 
 ## Posibilidades concretas de mejora
 
