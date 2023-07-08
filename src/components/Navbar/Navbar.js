@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from './assets/Logo.png'
 import CartWidget from '../CartWidget/CartWidget'
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -10,12 +10,12 @@ const NavBar = () => {
             <img style={{width:'90%', padding:20, paddingLeft:50}} src={logo} alt="navbar"/>
             </Link>
             <div style={{width:'75%'}}>
-            <NavLink to={'/category/Cartera'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option' } style={{padding:20, textDecoration:'none', color:'white'}}>CARTERAS</NavLink>
-            <NavLink to={'/category/Mochila'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option' } style={{padding:20, textDecoration:'none', color:'white'}}>MOCHILAS</NavLink>
-            <NavLink to={'/category/Riñonera'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option' } style={{padding:20, textDecoration:'none', color:'white'}}>RIÑONERAS</NavLink>
-            <NavLink to={'/category/Bandolera'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option' } style={{padding:20, textDecoration:'none', color:'white'}}>BANDOLERAS</NavLink>
-            <NavLink to={'/category/Billetera'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option' } style={{padding:20, textDecoration:'none', color:'white'}}>BILLETERAS</NavLink>
-            <NavLink to={'/category/Porta cosméticos'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option' } style={{padding:20, textDecoration:'none', color:'white'}}>ACCESORIOS</NavLink>
+            <Link to={'/category/Cartera'} style={{padding:20, textDecoration:'none', color:'white'}}>CARTERAS</Link>
+            <Link to={'/category/Mochila'} style={{padding:20, textDecoration:'none', color:'white'}}>MOCHILAS</Link>
+            <Link to={'/category/Riñonera'} style={{padding:20, textDecoration:'none', color:'white'}}>RIÑONERAS</Link>
+            <Link to={'/category/Bandolera'} style={{padding:20, textDecoration:'none', color:'white'}}>BANDOLERAS</Link>
+            <Link to={'/category/Billetera'} style={{padding:20, textDecoration:'none', color:'white'}}>BILLETERAS</Link>
+            <Link to={'/category/Porta cosméticos'} style={{padding:20, textDecoration:'none', color:'white'}}>ACCESORIOS</Link>
             </div>
             <CartWidget />
         </nav>

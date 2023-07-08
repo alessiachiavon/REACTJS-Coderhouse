@@ -13,13 +13,15 @@ const ItemCount = ({stock, onAdd}) => {
     }
 
     return(
-        <div>
+        <div style={{marginTop:50}}>
             <div style={{display:'flex', justifyContent:'center'}}>
-            <button onClick={decrement} style={{width:30, height:30, color:'grey', backgroundColor:'transparent', borderRadius:30, fontWeight:'bolder'}}>-</button>
-            <h3 style={{color:'grey', fontSize:20, marginLeft:20, marginRight:20}}>{count}</h3>
-            <button onClick={increment} style={{width:30, height:30, color:'grey', backgroundColor:'transparent', borderRadius:30, fontWeight:'bolder'}}>+</button>
+                <button onClick={decrement} style={{height:30, width: 40, padding:1, color:'grey', backgroundColor: 'white', borderColor:'grey', borderWidth:1, borderStyle: 'solid', borderRadius:10}}>-</button>
+                <h3 style={{width:50,height:30, paddingTop:1, color:'grey', fontSize:20, marginLeft:3, marginRight:3}}>{count}</h3>
+                <button onClick={increment} style={{height:30, width: 40, padding:1, color:'grey', backgroundColor: 'white', borderColor:'grey', borderWidth:1, borderStyle: 'solid', borderRadius:10}}>+</button>
             </div>
-            <button onClick={() => onAdd(count)} style={{padding:10, border:'none', color:'white', backgroundColor: 'grey', margin:25, borderRadius:10}}>Agregar al carrito </button>
+            <div>
+                <button onClick={() => onAdd(count)} style={{height:40, padding:7, border:'none', color:'white', backgroundColor: 'grey', borderRadius:10}}>Agregar al carrito </button>
+            </div>
         </div>
     )
 }

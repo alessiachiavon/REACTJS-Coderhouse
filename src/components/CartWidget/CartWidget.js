@@ -1,15 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import cart from './assets/carrito.svg'
+import { useCart } from '../../context/CartContext';
+import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
+    const { totalQuantity } = useCart()
+
     return (
-    <button type="button" class="btn btn-primary position-relative" style={{backgroundColor:'transparent', border:'none', padding:0, paddingRight:20}}>
-    <img style={{width:30}} src={cart} alt="cart-widget"/>
-    <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-danger">
-        0
-    <span class="visually-hidden">unread messages</span>
-    </span>
-    </button>
+        <Link to='/Cart' style={{textDecoration:'none'}}>
+        <div style={{display: 'flex'}}> 
+        <img style={{width:30}} src={cart} alt="cart-widget"/>
+        <div style={{marginLeft:-8, backgroundColor: 'white', width:24, height:24, borderRadius:12, fontWeight:'bold', color: 'black'}} >{ totalQuantity }</div> 
+        </div>
+        </Link>
     )
 }
 
